@@ -1,0 +1,21 @@
+<ion-view view-title="Register">
+    <ion-content class="padding">
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">Email</span>
+                <input type="email" ng-model="email">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Password</span>
+                <input type="password" ng-model="password" ng-minlength="3">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Re-Enter Password</span>
+                <input type="password" ng-model="password2" ng-minlength="3">
+            </label>
+            <div class="padding">
+                <button ng-disabled="(!email || !password) || (password != password2)" class="button button-block button-royal">Sign In</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

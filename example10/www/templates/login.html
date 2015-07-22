@@ -1,0 +1,14 @@
+<div class="list">
+    <label class="item item-input">
+        <span class="input-label">Email</span>
+        <input type="email" ng-model="email">
+    </label>
+    <label class="item item-input">
+        <span class="input-label">Password</span>
+        <input type="password" ng-model="password" ng-minlength="3">
+    </label>
+    <div class="padding">
+        <!--  <button ui-sref="app" ng-disabled="!email || !password" class="button button-block button-positive">Sign In</button> -->
+        <button ng-click="validate()" ng-disabled="!email || !password" class="button button-block button-positive">Sign In</button>
+    </div>
+</div>
